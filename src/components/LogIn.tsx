@@ -1,8 +1,9 @@
-import React from "react";
 import text from "../text/text.json";
 import Button from "./ui/Button";
+import { useTranslation } from "react-i18next";
 
 export default function LogIn() {
+  const { t } = useTranslation();
   return (
     <div
       className={`d-flex flex-column col-12 col-md-6`}
@@ -16,11 +17,14 @@ export default function LogIn() {
           className="align-self-start img-fluid"
         />
         <h1 className="openSansFont fw-semibold fs-1 lh-base text-white mt-5">
-          {text.already}
+          {t("already")}
         </h1>
-        <p className="appleFont fs-6 lh-1 text-white">{text.awesome}</p>
-        <p className="appleFont fs-6 lh-1 text-white">{text.skip}</p>
-        <Button value="Log in" style="align-self-start border border-white" />
+        <p className="appleFont fs-6 lh-1 text-white">{t("awesome")}</p>
+        <p className="appleFont fs-6 lh-1 text-white">{t("skip")}</p>
+        <Button
+          value={t("login")}
+          style="align-self-start border border-white"
+        />
       </div>
     </div>
   );

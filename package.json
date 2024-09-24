@@ -12,8 +12,11 @@
     "@types/react-dom": "^18.3.0",
     "axios": "^1.7.2",
     "bootstrap": "^5.1.3",
+    "crypto-js": "^4.2.0",
+    "i18next": "^23.15.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.2",
     "react-icons": "^5.2.1",
     "react-password-strength-bar": "^0.4.1",
     "react-scripts": "5.0.1",
@@ -44,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2"
   }
 }
